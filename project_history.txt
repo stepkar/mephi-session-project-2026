@@ -64,4 +64,7 @@
    64  getent group mephi-devs >> ~/users_groups.txt
    65  curl -s http://192.168.1.100 > ~/curl_output.txt
    66  cp /data/mephi-web/index.html ~/index.html
-   67  history > ~/project_history.txt
+   67  echo "root" > /etc/ssh/denied_users
+   68  nano /etc/pam.d/login
+   69  cp /etc/ssh/denied_users ~/denied_users
+   70  history > ~/project_history.txt
